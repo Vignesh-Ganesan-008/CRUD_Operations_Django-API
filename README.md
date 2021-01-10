@@ -1,4 +1,4 @@
-# CRUD_Operations_Django-API
+# Cars-API
 
 <h3>A simple RESTful API using django to demonstrate CRUD operations.</h3> 
 
