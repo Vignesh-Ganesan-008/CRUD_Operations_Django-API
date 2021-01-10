@@ -1,6 +1,6 @@
 # CRUD_Operations_Django-API
 
-<h1>It's my first time trying to create a RESTful API using django.</h1> 
+<h3>It's my first time trying to create a RESTful API using django.</h3> 
 
 urlpatterns = [<br>
     path("",views.home,name="home"), <b>//HOME<b><br>
