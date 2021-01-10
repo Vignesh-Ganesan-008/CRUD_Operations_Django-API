@@ -20,6 +20,9 @@ from django.views.decorators.csrf import csrf_exempt
 
 urlpatterns = [
     path("",views.home,name="home"),
-    path("car",views.post_car,name="post_car"),
-    path('<str:car_name>/',views.get_car,name="get_car"),
+    path('all-cars/',views.all_cars,name="all_cars"),
+    path("create-car/",views.post_car,name="post_car"),
+    path('retrive-car/<str:car_name>/',views.get_car,name="get_car"),
+    path('update-car/<str:car_name>/',views.put_car,name="update_car"),
+    path('delete-car/<str:car_name>/',views.delete_car,name="delete_car"),
 ]
