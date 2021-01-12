@@ -32,10 +32,10 @@ def get_car(request,car_name):
 def post_car(request):
     if request.method == "POST":
         payload = json.loads(request.body)
-        car_name = payload["car_name"]
-        speed = payload["speed"]
-        car = Car(name=car_name,speed=speed)
         try:
+            car_name = payload["car_name"]
+            speed = payload["speed"]
+            car = Car(name=car_name,speed=speed)
             car.save()
             response = json.dumps([{"Success":"Car added"}])
         except:
