@@ -45,8 +45,8 @@ def post_car(request):
 def put_car(request,car_name):
     if request.method == "PUT":
         payload = json.loads(request.body)
-        speed = payload["speed"]
         try:
+            speed = payload["speed"]
             car = Car.objects.get(name=car_name)
             car.speed = speed
             car.save()
